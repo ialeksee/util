@@ -39,6 +39,7 @@ template <typename T> void Util::readFile(std::string filename, std::vector<T> &
                 while(ss >> token)
                 {
                   out.push_back(token);
+                  ss.ignore();
                 }
             }
             if((str == "") && split_file)
